@@ -1,0 +1,169 @@
+@prefix : <http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/> .
+
+<http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/hasTopic
+:hasTopic rdf:type owl:ObjectProperty ;
+          rdfs:domain :Article ;
+          rdfs:range :Topic .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :City ;
+           rdfs:range :Country .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/presentedIn
+:presentedIn rdf:type owl:ObjectProperty ;
+             rdfs:domain :Article ;
+             rdfs:range :Conference .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publishedBy
+:publishedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Article ;
+             rdfs:range :Publisher .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publishedInCity
+:publishedInCity rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Article ;
+                 rdfs:range :City .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publishedInCountry
+:publishedInCountry rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Article ;
+                    rdfs:range :Country .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/writtenBy
+:writtenBy rdf:type owl:ObjectProperty ;
+           rdfs:domain :Article ;
+           rdfs:range :Author .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/cityName
+:cityName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :City ;
+          rdfs:range xsd:string .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/conferenceName
+:conferenceName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Conference ;
+                rdfs:range xsd:string .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/countryName
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/fullName
+:fullName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Author ;
+          rdfs:range xsd:string .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/number
+:number rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Article ;
+        rdfs:range xsd:integer .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/page
+:page rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Article ;
+      rdfs:range xsd:integer .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publisherName
+:publisherName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Publisher ;
+               rdfs:range xsd:string .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Article ;
+       rdfs:range xsd:string .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Article ;
+     rdfs:range xsd:string .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/volume
+:volume rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Article ;
+        rdfs:range xsd:integer .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Article ;
+      rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article
+:Article rdf:type owl:Class .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Author
+:Author rdf:type owl:Class .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/City
+:City rdf:type owl:Class .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Conference
+:Conference rdf:type owl:Class .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Country
+:Country rdf:type owl:Class .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Institution
+:Institution rdf:type owl:Class ;
+             rdfs:subClassOf :Publisher .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Journal
+:Journal rdf:type owl:Class ;
+         rdfs:subClassOf :Publisher .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Publisher
+:Publisher rdf:type owl:Class .
+
+
+###  http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Topic
+:Topic rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
