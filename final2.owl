@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/"
+     xml:base="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/hasTopic">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/locatedIn">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/City"/>
+        <rdfs:range rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/presentedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/presentedIn">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Conference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publishedBy">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Publisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publishedInCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publishedInCity">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publishedInCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publishedInCountry">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/writtenBy">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/cityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/cityName">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/conferenceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/conferenceName">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Conference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/countryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/countryName">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/fullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/fullName">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/number">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/page -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/page">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publisherName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/publisherName">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Publisher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/title">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/url">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/volume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/volume">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/year">
+        <rdfs:domain rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article -->
+
+    <owl:Class rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Article"/>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Author -->
+
+    <owl:Class rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Author"/>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/City -->
+
+    <owl:Class rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/City"/>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Conference -->
+
+    <owl:Class rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Conference"/>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Country -->
+
+    <owl:Class rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Country"/>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Institution -->
+
+    <owl:Class rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Institution">
+        <rdfs:subClassOf rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Publisher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Journal -->
+
+    <owl:Class rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Journal">
+        <rdfs:subClassOf rdf:resource="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Publisher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Publisher -->
+
+    <owl:Class rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Publisher"/>
+    
+
+
+    <!-- http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Topic -->
+
+    <owl:Class rdf:about="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/Topic"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

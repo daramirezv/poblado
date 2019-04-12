@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/">
+    <Prefix name="" IRI="http://www.grupo7.semanticweb.uniandes.edu.co/curso/articles/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="url"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Institution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="publishedInCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="writtenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Conference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="page"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Country"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="countryName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="cityName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="publishedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="conferenceName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Article"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="publishedInCity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="City"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="presentedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Journal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="publisherName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Topic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Publisher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="volume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="fullName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Institution"/>
+        <Class IRI="Publisher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Journal"/>
+        <Class IRI="Publisher"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTopic"/>
+        <Class IRI="Article"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="locatedIn"/>
+        <Class IRI="City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="presentedIn"/>
+        <Class IRI="Article"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="publishedBy"/>
+        <Class IRI="Article"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="publishedInCity"/>
+        <Class IRI="Article"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="publishedInCountry"/>
+        <Class IRI="Article"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="writtenBy"/>
+        <Class IRI="Article"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTopic"/>
+        <Class IRI="Topic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="locatedIn"/>
+        <Class IRI="Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="presentedIn"/>
+        <Class IRI="Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="publishedBy"/>
+        <Class IRI="Publisher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="publishedInCity"/>
+        <Class IRI="City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="publishedInCountry"/>
+        <Class IRI="Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="writtenBy"/>
+        <Class IRI="Author"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="cityName"/>
+        <Class IRI="City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="conferenceName"/>
+        <Class IRI="Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="countryName"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="fullName"/>
+        <Class IRI="Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="number"/>
+        <Class IRI="Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="page"/>
+        <Class IRI="Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="publisherName"/>
+        <Class IRI="Publisher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="title"/>
+        <Class IRI="Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="url"/>
+        <Class IRI="Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="volume"/>
+        <Class IRI="Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="year"/>
+        <Class IRI="Article"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="cityName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="conferenceName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="countryName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="fullName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="number"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="page"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="publisherName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="url"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="volume"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="year"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
